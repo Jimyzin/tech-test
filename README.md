@@ -17,7 +17,7 @@ We will be specifically looking for clean, well-structured code.  There should b
 - Java 11 is used to build and test this application.
 
 # Running the application
-Just like any SpringBoot application, this application can be run by executing the `main` method in `com.powerledger.techtest` package after properly sorting out its dependencies.
+Just like any SpringBoot application, this application can be run by executing the `main` method in `TechTestApplication` class in `com.powerledger.techtest` package after properly sorting out its dependencies.
 
 # Manual test results
 Manual tests were conducted using Postman and test evidence is included in `manual_test_snapshots` folder in the source code.
