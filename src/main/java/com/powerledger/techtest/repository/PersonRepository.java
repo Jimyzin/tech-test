@@ -11,8 +11,8 @@ import java.util.List;
 public interface PersonRepository extends CrudRepository<Person, PersonId> {
 
     /**
-     * Finds Person records between startRange and endRange ordered by name
-     * in ascending.
+     * Finds Person records corresponding to postcodes between startRange and endRange
+     * ordered by name in ascending.
      *
      * @param startRange
      * @param endRange

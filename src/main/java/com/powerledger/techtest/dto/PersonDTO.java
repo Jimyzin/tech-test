@@ -3,6 +3,10 @@ package com.powerledger.techtest.dto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.powerledger.techtest.entity.Person;
 
+/**
+ * This class represents the input request object comprising of
+ * a name and its corresponding postcode.
+ */
 public class PersonDTO {
 
     private String name;

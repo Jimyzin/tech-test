@@ -35,10 +35,10 @@ public class PersonService {
     public List<Person> createAll(List<PersonDTO> persons) {
         LOG.info("Invoked PersonService.createAll() at {}", new Date());
         return persons.stream()
-                .filter(person -> person != null) // removes null elements from the input list
+                .filter(person -> person != null) // removes null items from the input list
                 .map(person -> {
 
-                    // using personRepository.save() instead of personRepository.saveAll() because saveAll uses
+                    // using personRepository.save() instead of personRepository.saveAll() because saveAll() uses
                     // a for-each loop internally. So, this avoids iterating over the same list again in saveAll().
                     return personRepository.save(person.toPersonEntity());
 
