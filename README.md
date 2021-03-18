@@ -19,6 +19,9 @@ We will be specifically looking for clean, well-structured code.  There should b
 ## Running the application
 Just like any SpringBoot application, this application can be run by either executing the `main` method in `TechTestApplication` class in `com.powerledger.techtest` package or running `mvn spring-boot:run` in the root folder of the application.
 
+## Sample request
+A sample request json is provided in `sample_request` folder in the source code.
+
 ## Manual test results
 Manual tests were conducted using Postman and test evidence is included in `manual_test_snapshots` folder in the source code.
 
