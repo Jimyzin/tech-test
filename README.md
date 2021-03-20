@@ -8,6 +8,7 @@ The implementation should use Java streams in some way.
 We will be specifically looking for clean, well-structured code.  There should be at least one unit test implemented.
 
 ## Assumptions
+- The combination of name and postcode must be unique. That means, the same name cannot be related to the same postcode more than once.
 - Due to the use of SimpleJpaRepository implementation of CrudRespository interface, duplicate data entries (with duplicate key values) are merged to existing data. No duplicate key values are recreated or treated as errors.
 - Application database is in-memory. That means, everytime the application is restarted, the old/previous data is lost.
 - If the requested data is not found in the database, it returns an empty list and does not throw an exception.
