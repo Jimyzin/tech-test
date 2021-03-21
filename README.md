@@ -20,6 +20,10 @@ We will be specifically looking for clean, well-structured code.  There should b
 ## Running the application
 Just like any SpringBoot application, this application can be run by either executing the `main` method in `TechTestApplication` class in `com.powerledger.techtest` package or running `mvn spring-boot:run` in the root folder of the application.
 
+## REST APIs
+- Saving a list of names and postcodes - http://{host}:8080/tech-test/person/createAll eg: http://localhost:8080/tech-test/person/createAll
+- Retrieving names within a postcode range - http://{host}:8080/tech-test/person/retrieveBetweenRange?startRange={startRange}&endRange={endRange} eg: http://localhost:8080/tech-test/person/retrieveBetweenRange?startRange=5200&endRange=6300
+
 ## Sample request
 A sample request json is provided in `sample_request` folder in the source code.
 
